@@ -23,9 +23,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - run: |
-          echo Job ${{ github.event_name }}
+          echo Job ${{ github.event_name }}.
           echo Triggered by ${{ github.event_name }} event.
-          echo Run ID is ${{ github.run_id }}"
+          echo Run ID is ${{ github.run_id }}.
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
